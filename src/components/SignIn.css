@@ -1,0 +1,36 @@
+.content-color{
+    color: white;
+    align-items: center;
+    
+}
+.input-content{
+    background-color: rgb(59, 61, 61);
+    height: 35px;
+    width: 390px;
+    border: 0;
+    border-radius: 3px;
+}
+.submit-btn{
+    height: 40px;
+    width:390px;
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 3px;
+}
+.para{
+    color: rgb(116, 112, 112);
+    font-size: small;
+}
+.link{
+    color: rgb(55, 55, 223);
+    font-size: small;
+}
+.signup-link{
+    color: white;
+    font-size: medium;
+}
+.signup-text{
+    color: rgb(116, 112, 112);
+    font-size: medium;
+}
