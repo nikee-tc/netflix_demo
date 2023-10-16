@@ -1,0 +1,27 @@
+.logo-header{
+display: flex;
+background-color: #0c0c0e;
+align-items: center;
+}
+
+.logo{
+    width:200px;
+    height:auto;
+   
+}
+.btn{
+    background-color: red;
+    color: white;
+    height:30px;
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    padding: auto;
+    font-weight: bold;
+    
+}
+.btn-container{
+    
+    margin-left: 60 px;
+    background-color: #0b0b0c;
+}

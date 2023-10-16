@@ -1,0 +1,20 @@
+.content {
+    background-color: #0b0b0c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    word-wrap: break-word;
+  }
+  .dynamic-font{
+    font-size: 1.5em;
+    color: white;
+  }
+  @media (min-width:768px) {
+    .dynamic-font{
+        font-size: 2.5em;
+    }
+  }
