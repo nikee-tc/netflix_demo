@@ -9,13 +9,13 @@ const HomePage = () => {
   
     const[isOpen,setIsOpen]=useState(false);
   const signUpForm=()=>{
-    setIsOpen(!isOpen)
+    setIsOpen(true)
   }
   return (
     <div className='homepage-content'>
    <div className='overlay'>
       <img src={netflix_logo} alt="logo" className='logo'/>
-    <SignIn/>
+    
     <div className='btn-container'>
       {!isOpen &&  <button className='btn' value={isOpen} onClick={signUpForm}>Sign In</button>}
      
