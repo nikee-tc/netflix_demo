@@ -37,7 +37,7 @@ setPassword(event.target.value);
   </div>
 <br/><br/>
 
-  <button type="submit" className='submit-btn'>Submit</button>
+  <button type="submit" className='submit-btn'>receive</button>
 </form>
 <br/>
 <br/>
