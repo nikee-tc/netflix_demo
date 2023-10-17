@@ -41,7 +41,10 @@ setPassword(event.target.value);
 </form>
 <br/>
 <br/>
-
+    <select>
+      <option>English</option>
+      <option>Hindi</option>
+    </select>
 <span className='signup-text' >New to Netflix?</span>
 <a className='signup-link'>  Sign up now.</a><br/><br/>
 <span className='para'> This page is protected by Google reCAPTCHA to ensure you're not a bot.</span><a className='link'> Learn more.</a>

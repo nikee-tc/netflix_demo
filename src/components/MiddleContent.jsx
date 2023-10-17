@@ -8,6 +8,7 @@ const MiddleContent = () => {
    <p>Join today. Cancel anytime.</p>
    <p>Ready to Watch? Enter your email to create or restart your membership.</p>
    <input type='email' className='email-container' placeholder='Email address'></input>
+   <br />
    <button className='btn'>Get Started</button>
     </div>
   )
