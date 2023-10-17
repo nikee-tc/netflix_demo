@@ -25,6 +25,7 @@ const FeatureContent = () => {
 <ListItem key={index} item={item}/>
 )
 )}
+
 </div>
       
     </div>
