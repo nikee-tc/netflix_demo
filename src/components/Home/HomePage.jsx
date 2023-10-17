@@ -1,29 +1,37 @@
 import React, { useState } from 'react'
 import './HomePage.css'
-import Header from './Header';
-import SignIn from './SignIn';
-import MiddleContent from './MiddleContent';
+import Header from '../Header';
+import SignIn from '../Home/SignIn';
+import MiddleContent from '../Home/MiddleContent';
+import FeatureContent from './FeatureContent';
 
 
 
 const HomePage = () => {
   
     const[isOpen,setIsOpen]=useState(false);
+  
   const signUpForm=()=>{
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
+
   }
+  
   return (
     <div className='homepage-content'>
    <div className='overlay'>
       
     <Header/>
     <div className='btn-container'>
+    
      
 
-      {!isOpen &&  <button className='btn' value={isOpen} onClick={signUpForm}>Sign In</button> }
-     
+    {!isOpen && <button className='btn'  onClick={signUpForm}>Sign In</button> 
+      } 
+   
       {isOpen && <SignIn/>}
+      
     </div>
+    <FeatureContent/>
     </div>
     </div>
   )

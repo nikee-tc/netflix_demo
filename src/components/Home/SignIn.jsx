@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SignIn.css'
-import Container from './UI/Container';
+import Container from '../UI/Container';
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {
@@ -37,7 +37,7 @@ setPassword(event.target.value);
   </div>
 <br/><br/>
 
-  <button type="submit" className='submit-btn'>receive</button>
+  <button type="submit" className='submit-btn'>Sign In</button>
 </form>
 <br/>
 <br/>

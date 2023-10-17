@@ -1,8 +1,9 @@
 
 import './App.css';
-import HomePage from './components/HomePage';
+import FeatureContent from './components/Home/FeatureContent';
+import HomePage from './components/Home/HomePage';
 
-import MiddleContent from './components/MiddleContent';
+import MiddleContent from './components/Home/MiddleContent';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div >
     <HomePage/>
     
-     <MiddleContent/>
+    <MiddleContent/>
+ 
     </div>
   );
 }
