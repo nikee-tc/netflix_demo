@@ -1,0 +1,17 @@
+.feature-content{
+    color: white;
+    text-align: center;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* You can adjust the opacity of the content box */
+    border-radius: 10px;
+  }
+  
