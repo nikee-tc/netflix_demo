@@ -23,7 +23,10 @@ const HomePage = () => {
     <Header/>
     <div className='btn-container'>
     
-     
+    <select className='dropdown'>
+      <option>English</option>
+      <option>Hindi</option>
+    </select>
 
     {!isOpen && <button className='btn'  onClick={signUpForm}>Sign In</button> 
       } 

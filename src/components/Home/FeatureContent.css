@@ -13,5 +13,6 @@ body {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8); /* You can adjust the opacity of the content box */
     border-radius: 10px;
+    z-index: 1;
   }
   
