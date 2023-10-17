@@ -19,7 +19,7 @@ const[email,setEmail]= useState("")
   
    <p className='para'> Ready to Watch? Enter your email to create or restart your membership.</p>
    <div className='input-container'>
-   <input type='email' className='email-container' value={email} onChange={emailChangeHandler} placeholder='Email address'></input>
+   <input type='email'  value={email} onChange={emailChangeHandler} placeholder='Email address'></input>
    <button className='btn'>Get Started</button>
    </div>
   

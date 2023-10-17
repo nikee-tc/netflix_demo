@@ -31,7 +31,7 @@ const HomePage = () => {
       {isOpen && <SignIn/>}
       
     </div>
-    <FeatureContent/>
+
     </div>
     </div>
   )

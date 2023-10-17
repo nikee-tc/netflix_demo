@@ -12,7 +12,7 @@ function App() {
     <HomePage/>
     
     <MiddleContent/>
- 
+ <FeatureContent/>
     </div>
   );
 }
