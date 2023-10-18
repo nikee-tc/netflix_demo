@@ -13,7 +13,7 @@ function App() {
     <HomePage/>
     <MiddleContent/>
     <Movies/>
-    {/* <Card/> */}
+    <Card/>
     <FeatureContent/>
     </div>
   );

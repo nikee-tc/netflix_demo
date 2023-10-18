@@ -1,0 +1,25 @@
+.row {
+    > div {
+      display: flex;
+      justify-content: space-evenly;
+      overflow-x: auto;
+    }
+  }
+  .card {
+    
+    width: 200px;
+    margin: 0.5rem;
+    cursor: pointer;
+    margin-top: 2000px;
+    /*transition: transform 0.5s;*/
+    >img {
+        width: min-content;
+        height: inherit;
+    }
+    
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.1);
+  }
+  
