@@ -1,12 +1,10 @@
 
 import './App.css';
+import Card from './components/Card/Card';
 import FeatureContent from './components/Home/FeatureContent';
 import HomePage from './components/Home/HomePage';
 
 import MiddleContent from './components/Home/MiddleContent';
-
-import HomePage from './components/HomePage';
-import MiddleContent from './components/MiddleContent';
 import Movies from './components/Movies/Movies';
 
 function App() {
@@ -15,9 +13,8 @@ function App() {
     <HomePage/>
     <MiddleContent/>
     <Movies/>
-    
-    <MiddleContent/>
- <FeatureContent/>
+    {/* <Card/> */}
+    <FeatureContent/>
     </div>
   );
 }
