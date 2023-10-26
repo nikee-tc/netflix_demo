@@ -1,0 +1,51 @@
+/* App Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Profile Page Styles */
+  .profile-page {
+    text-align: center;
+  }
+  
+  /* User Profile Styles */
+  .user-profile {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .user-profile h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .user-profile img {
+    max-width: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+  }
+  
+  .user-profile button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-profile button:hover {
+    background-color: #ff4500;
+  }
+  
