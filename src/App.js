@@ -13,10 +13,10 @@ function App() {
   return (
     <div >
     <HomePage/>
-    <MiddleContent/>
+    
     <Movies/>
     
-    <MiddleContent/>
+   
  <FeatureContent/>
     </div>
   );

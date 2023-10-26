@@ -1,43 +1,38 @@
-import React, { useState } from 'react'
-import './HomePage.css'
-import Header from '../Header';
-import SignIn from '../Home/SignIn';
-import MiddleContent from '../Home/MiddleContent';
-import FeatureContent from './FeatureContent';
-
-
+import React, { useState } from "react";
+import "./HomePage.css";
+import Header from "../Header";
+import SignIn from "../Home/SignIn";
+import MiddleContent from "../Home/MiddleContent";
+import FeatureContent from "./FeatureContent";
 
 const HomePage = () => {
-  
-    const[isOpen,setIsOpen]=useState(false);
-  
-  const signUpForm=()=>{
+  const [isOpen, setIsOpen] = useState(false);
+
+  const signUpForm = () => {
     setIsOpen(!isOpen);
+  };
 
-  }
-  
   return (
-    <div className='homepage-content'>
-   <div className='overlay'>
-      
-    <Header/>
-    <div className='btn-container'>
-    
-    <select className='dropdown'>
-      <option>English</option>
-      <option>Hindi</option>
-    </select>
+    <div className="homepage-content">
+      <div className="overlay">
+        <Header />
+        <div className="btn-container">
+          <select className="dropdown">
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
 
-    {!isOpen && <button className='btn'  onClick={signUpForm}>Sign In</button> 
-      } 
-   
-      {isOpen && <SignIn/>}
-      
-    </div>
+          {!isOpen && (
+            <button className="btn" onClick={signUpForm}>
+              Sign In
+            </button>
+          )}
 
+          {isOpen && <SignIn />}
+        </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
