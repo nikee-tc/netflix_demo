@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./SignIn.css";
-import Container from "../UI/Container";
-import { Link } from "react-router-dom";
+import FormContainer from "../UI/FormContainer";
+import { useHistory } from "react-router-dom";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -9,6 +9,7 @@ const SignIn = () => {
   const [users, setUsers] = useState([]);
   
 
+  
   useEffect(()=>{
     const userData = localStorage.getItem('users');
 
@@ -35,7 +36,7 @@ const SignIn = () => {
   };
 
   return (
-    <Container>
+    <FormContainer>
       <h2 className="content-color">Sign In</h2>
 
       <form onSubmit={onSubmitHandler}>
@@ -64,23 +65,11 @@ const SignIn = () => {
         <br />
         <br />
 
-        <button type="submit" className="submit-btn">
+        <button  type="submit" className="submit-btn">
           Sign In
         </button>
       </form>
-      {users.length > 0 && (
-        <div>
-          <h3>Stored Data</h3>
-          <ul>
-            {users.map((user, index)=>(
-              <li key={index}>
-                Email: {user.email} , Password: {user.password}
-              </li>
-            ))}
-          </ul>
-       
-        </div>
-      )}
+      
       <br />
       <br />
 
@@ -93,7 +82,7 @@ const SignIn = () => {
         This page is protected by Google reCAPTCHA to ensure you're not a bot.
       </span>
       <a className="link"> Learn more.</a>
-    </Container>
+    </FormContainer>
   );
 };
 

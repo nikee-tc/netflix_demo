@@ -2,17 +2,26 @@
 import './App.css';
 import FeatureContent from './components/Home/FeatureContent';
 
-
+import {createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MiddleContent from './components/Home/MiddleContent';
 
 import HomePage from './components/Home/HomePage';
-
+import ProfilePage from './components/Profile/ProfilePage'
 import Movies from './components/Movies/Movies';
+import SignIn from './components/Home/SignIn';
+
+
+
+ const router = createBrowserRouter([
+  {path:'/',element:<HomePage/>},
+  {path:'/profile', element:<ProfilePage/>}
+  
+])
 
 function App() {
   return (
     <div >
-    <HomePage/>
+   <RouterProvider router={router}/>
     
     <Movies/>
     

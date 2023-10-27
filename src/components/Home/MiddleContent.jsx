@@ -8,7 +8,11 @@ const MiddleContent = () => {
     setEmail(event.target.value);
     console.log(setEmail);
   };
-
+  // const handleGetStarted = (event)=>{
+  //   event.preventDefault();
+  //   setEmail(email);
+  //   setEmail('');
+  // }
   return (
     <div className="text">
       <h1 className="dynamic-font">
@@ -16,8 +20,7 @@ const MiddleContent = () => {
       </h1>
       <p className="para-text"> Join today. Cancel anytime.</p>
 
-      <p className="para">
-        {" "}
+      <p className="para-text">
         Ready to Watch? Enter your email to create or restart your membership.
       </p>
       <div className="input-container">
@@ -27,7 +30,7 @@ const MiddleContent = () => {
           onChange={emailChangeHandler}
           placeholder="Email address"
         ></input>
-        <button className="btn">Get Started</button>
+        <button className="btn-start">Get Started</button>
       </div>
     </div>
   );

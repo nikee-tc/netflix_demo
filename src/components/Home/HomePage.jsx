@@ -28,7 +28,8 @@ const HomePage = () => {
             </button>
           )}
 
-          {isOpen && <SignIn />}
+          {isOpen ? <SignIn /> : <MiddleContent/> }
+         
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@
   .input-container input{
     padding: 10px;
     width: 60%;
-    
+    color: white;
     background-color: #242426;
     opacity: 0.85;
     height: 40px;
@@ -43,7 +43,7 @@
 
   
   .text {
-    position: absolute;
+   position: inherit;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the text within the container */
@@ -58,12 +58,7 @@
     word-wrap: break-word;
   }
 
-  .para{
-    font-size: large;
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  
   .para-text{
     font-size: 20px;
     padding-left: 30px;
@@ -73,4 +68,15 @@
   .input-container{
     display: flex;
     justify-content: space-between;
+   color: white;
+  }
+  .btn-start{
+    padding-right: 10px;
+    background: red;
+    color: white;
+    border: 0px;
+    margin-left: 15px;
+    border-radius: 5px;
+    font-weight:bolder;
+    font-size: 25px;
   }
