@@ -19,17 +19,22 @@ const HomePage = () => {
       <div className="overlay">
         <Header />
         <div className="btn-container">
+          <select className="dropdown">
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
+
           {!isOpen && (
             <button className="btn" onClick={signUpForm}>
               Sign In
             </button>
           )}
-          {isOpen && <SignIn />}
+
+          {isOpen ? <SignIn /> : <MiddleContent/> }
+         
         </div>
-        <div></div>
       </div>
     </div>
-    
   );
 };
 

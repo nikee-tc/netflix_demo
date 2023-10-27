@@ -31,8 +31,13 @@
 }
 .img {
     width: 50%;
-    height: 50;
+    height: 50%;
     background-image: url();
     background-size: 70% 70%;
+    
 
+}
+.card-media{
+    margin: 10px;
+    padding: 10px;
 }

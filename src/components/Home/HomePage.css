@@ -60,4 +60,11 @@ body {
   color: blue;
   text-align: center;
 }
-
+.dropdown {
+  background-color: #1c1b1b;
+  opacity: 0.8;
+  color: white;
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+}
