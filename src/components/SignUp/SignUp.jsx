@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -9,13 +10,13 @@ const SignUp = () => {
   const passwordChange = (event) => {
     setPassword(event.target.value);
   };
-  const onSubmitHandler=(event)=>{
+  const onSubmitHandler = (event) => {
     event.preventDefault();
     setEmail(email);
     setPassword(password);
     console.log(setEmail);
     console.log(setPassword);
-  }
+  };
   return (
     <div>
       <h1>Create a password to start your membership</h1>

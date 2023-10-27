@@ -39,7 +39,7 @@ const FeatureContent = () => {
   return (
     <div className="feature-content">
       <h1>Frequently Asked Questions</h1>
-      <div>
+      <div className="list-item">
         {items.map((item, index) => (
           <ListItem key={index} item={item} />
         ))}

@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from "react";
 import "./SignIn.css";
 import FormContainer from "../UI/FormContainer";
-import { useHistory } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom";
 const SignIn = () => {
+  const navigate = useNavigate();
+  function navigateHandler() {
+    navigate("/profile");
+  }
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [users, setUsers] = useState([]);
-  
 
-  
-  useEffect(()=>{
-    const userData = localStorage.getItem('users');
+  useEffect(() => {
+    const userData = localStorage.getItem("users");
 
-    if(userData){
-     setUsers(JSON.parse(userData));
+    if (userData) {
+      setUsers(JSON.parse(userData));
     }
-  },[]);
+  }, []);
 
   const onEmailChange = (event) => {
     setEmail(event.target.value);
@@ -27,12 +29,12 @@ const SignIn = () => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
 
-    const newUser = {email,password};
-  setUsers([...users,newUser]);
-   localStorage.setItem('users',JSON.stringify([...users, newUser]));
-   
-    setEmail('');
-    setPassword('');
+    const newUser = { email, password };
+    setUsers([...users, newUser]);
+    localStorage.setItem("users", JSON.stringify([...users, newUser]));
+
+    setEmail("");
+    setPassword("");
   };
 
   return (
@@ -65,11 +67,11 @@ const SignIn = () => {
         <br />
         <br />
 
-        <button  type="submit" className="submit-btn">
+        <button type="submit" onClick={navigateHandler} className="submit-btn">
           Sign In
         </button>
       </form>
-      
+
       <br />
       <br />
 
