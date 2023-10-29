@@ -1,23 +1,19 @@
-.feature-content{
-    color: white;
-    text-align: center;
+.feature-content {
+  background-color: #141414;
+  padding: 20px;
+  color: #fff;
 }
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
 
-  .content {
-    color: white;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* You can adjust the opacity of the content box */
-    border-radius: 10px;
-    z-index: 1;
-  }
-  .list-item{
-    height: 40px;
-    width: 400px;
-    align-items: start;
-  }
-  
+.feature-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}

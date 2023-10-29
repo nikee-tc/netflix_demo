@@ -3,9 +3,6 @@ import "./HomePage.css";
 import Header from "../Header";
 import SignIn from "../Home/SignIn";
 import MiddleContent from "../Home/MiddleContent";
-import FeatureContent from "./FeatureContent";
-import Movies from "../Movies/Movies";
-import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,25 +12,21 @@ const HomePage = () => {
   };
 
   return (
-    <div className="homepage-content">
-      <div className="overlay">
-        <Header />
-        <div className="btn-container">
-          <select className="dropdown">
-            <option>English</option>
-            <option>Hindi</option>
-          </select>
+    <div className="overlay">
+      <Header />
+      <div className="btn-container">
+        <select className="dropdown">
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
 
-          {!isOpen && (
-            <button className="btn" onClick={signUpForm}>
-              Sign In
-            </button>
-          )}
-
-          {isOpen ? <SignIn /> : <MiddleContent/> }
-         
-        </div>
+        {!isOpen && (
+          <button className="btn" onClick={signUpForm}>
+            Sign In
+          </button>
+        )}
       </div>
+      {isOpen ? <SignIn /> : <MiddleContent />}
     </div>
   );
 };
