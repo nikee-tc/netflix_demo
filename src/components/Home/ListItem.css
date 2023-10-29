@@ -1,5 +1,16 @@
-.btn-dropdown{
-z-index: 1;
+/* .btn-dropdown{
+    z-index: 1;
     height: 100px;
     width: 300px;
+} */
+
+.space-card {
+    display: flex;
+    width: 80%;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.747);
 }
