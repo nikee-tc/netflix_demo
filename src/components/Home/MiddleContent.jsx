@@ -29,8 +29,7 @@ const MiddleContent = () => {
           type="email"
           value={email}
           onChange={emailChangeHandler}
-          placeholder="Email address"
-        ></input>
+          placeholder="Email address"></input>
         <button className="btn-start">Get Started</button>
       </div>
     </div>

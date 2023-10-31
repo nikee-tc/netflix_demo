@@ -1,33 +1,41 @@
 .overlay {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1rem;
+}
+
+.search {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+}
+
+.search-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-container {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
   align-items: center;
+  margin: 2rem 0;
 }
 
-
 .dropdown {
-  background: silver;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .btn {
-  background: black;
+  background-color: red;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
