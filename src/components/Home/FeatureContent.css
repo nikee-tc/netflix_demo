@@ -1,13 +1,16 @@
 .feature-content {
-  background-color: #141414;
+  
+  margin-top: 20px;
+  background-color: #14141400;
   padding: 20px;
   color: #fff;
 }
 
 .feature-content h1 {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
+  
 }
 
 .list-item {

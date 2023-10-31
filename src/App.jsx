@@ -1,18 +1,11 @@
-
+import React from 'react';
 import './App.css';
-import Card from './components/Card/Card';
 import FeatureContent from './components/Home/FeatureContent';
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/Home/HomePage';
 import ProfilePage from './components/Profile/ProfilePage'
 import Movies from './components/Movies/Movies';
-
 import SignUp from './components/SignUp/SignUp';
-
-
 
 const router = createBrowserRouter([
   { path: '/', element: <HomePage /> },
@@ -24,9 +17,10 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div >
-      <div className="background-img"></div> 
+      <div className="background-img"></div>
       <RouterProvider router={router} />
       <FeatureContent />
+      <Movies />
     </div>
   );
 }

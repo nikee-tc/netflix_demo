@@ -4,10 +4,33 @@
   /* background-size: 100vw 800px; */
   background-repeat: no-repeat;
   background-color: #080808;
+  background-attachment: fixed;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: -01;
+  z-index: -1;
 }
+
+/* scrolling img  */
+.background-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform: translate(40% 50%);
+  /* animation: scrollBackground 0s linear infinite; */
+}
+
+/* @keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0%; 
+  }
+} */

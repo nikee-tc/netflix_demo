@@ -11,9 +11,20 @@ const HomePage = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleSearch = () => {
+    alert("Searching..."); 
+  };
+
   return (
     <div className="overlay">
       <Header />
+      <div className="search">
+        <input type="text" placeholder="You can search here!" />
+        <button className="search-button" onClick={handleSearch}>
+          Search
+        </button>
+      </div>
+
       <div className="btn-container">
         <select className="dropdown">
           <option>English</option>

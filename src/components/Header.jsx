@@ -7,8 +7,8 @@ const Header = () => {
     <img
       src={netflix_img}
       alt="logo"
-      height="100%"
-      style={{ maxHeight: "80px", margin: "2rem 0" }}
+      height="10%"
+      style={{ maxHeight: "80px", margin: "1rem 0" }}
     />
   );
 };
