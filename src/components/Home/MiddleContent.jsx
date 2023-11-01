@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./MiddleContent.css";
+import Registration from "./Registration";
 
 const MiddleContent = () => {
   const [email, setEmail] = useState("");
@@ -24,14 +25,7 @@ const MiddleContent = () => {
           Ready to Watch? Enter your email to create or restart your membership.
         </p>
       </h4>
-      <div className="input-container">
-        <input
-          type="email"
-          value={email}
-          onChange={emailChangeHandler}
-          placeholder="Email address"></input>
-        <button className="btn-start">Get Started</button>
-      </div>
+      <Registration/>
     </div>
   );
 };

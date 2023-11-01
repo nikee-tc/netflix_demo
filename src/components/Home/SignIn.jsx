@@ -1,24 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState  } from "react";
 import "./SignIn.css";
 import FormContainer from "../UI/FormContainer";
 
-import { useNavigate } from "react-router-dom";
 const SignIn = () => {
-  const navigate = useNavigate();
-  function navigateHandler() {
-    navigate("/profile");
-  }
+ 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    const userData = localStorage.getItem("users");
-
-    if (userData) {
-      setUsers(JSON.parse(userData));
-    }
-  }, []);
 
   const onEmailChange = (event) => {
     setEmail(event.target.value);
@@ -26,15 +14,16 @@ const SignIn = () => {
   const onPasswordChange = (event) => {
     setPassword(event.target.value);
   };
-  const onSubmitHandler = (event) => {
-    event.preventDefault();
 
-    const newUser = { email, password };
-    setUsers([...users, newUser]);
-    localStorage.setItem("users", JSON.stringify([...users, newUser]));
-
-    setEmail("");
-    setPassword("");
+  const onSubmitHandler = () => {
+   const user = {email,password};
+   const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+   const foundUser = existingUsers.find((u) => u.email === user.email && u.password === user.password);
+   if(foundUser){
+    alert('login successfull')
+   }else{
+    alert('invalid username & password');
+   }
   };
 
   return (
@@ -54,7 +43,7 @@ const SignIn = () => {
           <br />
         </div>
         <div className="content-color">
-          <br />{" "}
+          <br />
           <input
             className="input-content"
             type="password"
@@ -67,7 +56,7 @@ const SignIn = () => {
         <br />
         <br />
 
-        <button type="submit" onClick={navigateHandler} className="submit-btn">
+        <button type="submit" onClick={onSubmitHandler} className="submit-btn">
           Sign In
         </button>
       </form>
