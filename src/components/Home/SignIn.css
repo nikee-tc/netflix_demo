@@ -36,3 +36,6 @@
     color: rgb(116, 112, 112);
     font-size: medium;
 }
+.error-message{
+    color: red;
+}
