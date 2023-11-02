@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Movies.css"; 
 
-const API_URL = `http://www.omdbapi.com/?apikey=7c78daf9&s=dhamal`;
+const API_URL = `http://www.omdbapi.com/?apikey=7c78daf9&s=spider man`;
 
 const Movies = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,7 +48,7 @@ const Movies = () => {
       <h1>Movie List</h1>
       <div className="movie-list">
         {movies.map((movie) => (
-          <a key={movie.imdbID} href={"movies/" + movie.imdbID} className="movie-item">
+          <a key={movie.imdbID} href={"movies/" + movie.imdbID + "?title=" + movie.Title} className="movie-item">
             <img src={movie.Poster} alt={movie.Title} />
             <h3>{movie.Title}</h3>
           </a>

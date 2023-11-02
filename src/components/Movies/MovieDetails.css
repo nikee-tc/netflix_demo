@@ -1,0 +1,30 @@
+.movie-details {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  background-color: #ffe8c4;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  margin: 40px;
+}
+
+.movie-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.movie-plot {
+  font-weight: lighter;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.movie-details p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.movie-details p strong {
+  font-weight: bold;
+}

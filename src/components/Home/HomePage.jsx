@@ -3,6 +3,7 @@ import "./HomePage.css";
 import Header from "../Header";
 import SignIn from "../Home/SignIn";
 import MiddleContent from "../Home/MiddleContent";
+import FeatureContent from "./FeatureContent";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,7 @@ const HomePage = () => {
         )}
       </div>
       {isOpen ? <SignIn /> : <MiddleContent />}
+      < FeatureContent/>
     </div>
   );
 };
