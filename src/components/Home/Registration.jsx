@@ -1,33 +1,41 @@
 import React, { useState } from "react";
-import './Registration.css'
+import "./Registration.css";
 
 const Registration = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+
   const emailChangeHandler = (event) => {
-    setEmail(event.target.value);
+    const enteredEmail = event.target.value;
+    setEmail(enteredEmail);
+    if (isEmailValid(enteredEmail)) {
+      setEmailError("");
+    } else {
+      setEmailError("Invalid email address.");
+    }
   };
   const onPasswordChange = (event) => {
     setPassword(event.target.value);
+    setPasswordError("");
   };
-  const isEmailValid = (email)=>{
-    const emailPattern =/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const isEmailValid = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return emailPattern.test(email);
   };
   const isPasswordValid = (password) => {
     return password.length >= 6;
-  }
+  };
   const onClickHandler = () => {
     setEmailError("");
     setPasswordError("");
 
-    if(!isEmailValid(email)){
+    if (!isEmailValid(email)) {
       setEmailError("Invalid email address");
       return;
     }
-    if(!isPasswordValid(password)){
+    if (!isPasswordValid(password)) {
       setPasswordError("Password must be at least 6 characters long");
       return;
     }
@@ -58,25 +66,22 @@ const Registration = () => {
           onChange={emailChangeHandler}
           placeholder="Email address"
         ></input>
-       
+
         {emailError && <p className="error-message">{emailError}</p>}
-       
       </div>
-      <div  className="input-container">
-      <input
-       
-        type="password"
-        name="password"
-        value={password}
-        placeholder="Password"
-        onChange={onPasswordChange}
-      />
-      {passwordError && <p className="error-message">{passwordError}</p>}
+      <div className="input-container">
+        <input
+          type="password"
+          name="password"
+          value={password}
+          placeholder="Password"
+          onChange={onPasswordChange}
+        />
+        {passwordError && <p className="error-message">{passwordError}</p>}
       </div>
       <button className="btn-start" onClick={onClickHandler}>
         Get Started
       </button>
-      
     </div>
   );
 };
