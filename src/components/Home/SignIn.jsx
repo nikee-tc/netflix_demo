@@ -56,6 +56,7 @@ const SignIn = () => {
       );
       if (foundUser) {
         alert("login successfull");
+        window.location.href = "/movies";
       } else {
         setUserNotFoundError(true);
       }
