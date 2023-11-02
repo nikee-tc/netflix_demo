@@ -5,12 +5,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/Home/HomePage';
 import ProfilePage from './components/Profile/ProfilePage'
 import Movies from './components/Movies/Movies';
-import SignUp from './components/SignUp/SignUp';
+
+
 
 const router = createBrowserRouter([
   { path: '/', element: <HomePage /> },
   { path: '/profile', element: <ProfilePage /> },
-  { path: '/signup', element: <SignUp /> },
+ 
   { path: '/movies', element: <Movies /> }
 ])
 
@@ -20,7 +21,7 @@ function App() {
       <div className="background-img"></div>
       <RouterProvider router={router} />
       <FeatureContent />
-      <Movies />
+   
     </div>
   );
 }
